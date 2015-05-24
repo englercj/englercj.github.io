@@ -7,7 +7,7 @@ author:
 
 # Page setup
 permalink: pretty
-baseurl: /
+baseurl:
 url: //englercj.github.io
 encoding: UTF-8
 

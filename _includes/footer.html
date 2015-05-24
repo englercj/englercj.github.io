@@ -22,7 +22,7 @@
                         {% if site.social.gplus %}<li><a target="_blank" href="https://plus.google.com/{{site.social.gplus}}"><i class="fa fa-google-plus"></i></a></li>{% endif %}
                         {% if site.social.linkedin %}<li><a target="_blank" href="https://www.linkedin.com/pub/chad-engler/65/71b/b39"><i class="fa fa-linkedin"></i></a></li>{% endif %}
                         {% if site.social.pintrest %}<li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>{% endif %}
-                        {% if site.social.rss %}<li><a href="{{site.url}}{{site.social.rss}}"><i class="fa fa-rss"></i></a></li>{% endif %}
+                        {% if site.social.rss %}<li><a href="{{site.baseurl}}{{site.social.rss}}"><i class="fa fa-rss"></i></a></li>{% endif %}
                     </ul>
                     <div id="copyright">© COPYRIGHT 2015 Chad Engler. ALL RIGHTS RESERVED</div>
                     <a id="home-circle" href="{{site.url}}"><i class="fa fa-home"></i></a>
@@ -38,7 +38,7 @@
           ga('create', '{{ site.analytics.google }}', 'auto');
           ga('send', 'pageview');
        </script>
-       <script type="text/javascript" src="{{site.url}}/js/jquery-1.11.0.min.js"></script>
-       <script type="text/javascript" src="{{site.url}}/js/custom.js"></script>
+       <script type="text/javascript" src="{{site.baseurl}}/js/jquery-1.11.0.min.js"></script>
+       <script type="text/javascript" src="{{site.baseurl}}/js/custom.js"></script>
     </body>
 </html>
