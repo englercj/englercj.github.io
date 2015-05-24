@@ -14,8 +14,8 @@ encoding: UTF-8
 paginate: 5
 paginate_path: "page:num"
 quote:
-  name: Walt Disney
-  content: You can design and create, and build the most wonderful place in the world. But it takes <span class="colored-text">people</span> to make the dream a reality.
+  name: Albert Einstein
+  content: We can’t solve problems by using the same kind of thinking we used when we created them.
 
 # Markdown settings
 markdown: redcarpet
