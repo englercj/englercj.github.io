@@ -1,0 +1,64 @@
+# Author/Blog Setup
+name: new Chad()
+description: A Blog About Code
+author:
+  name: Chad Engler
+  email: chad@pantherdev.com
+
+# Page setup
+permalink: pretty
+baseurl: /
+url: //localhost:4000
+encoding: UTF-8
+
+paginate: 5
+paginate_path: "page:num"
+
+# Markdown settings
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - autolink
+    - tables
+    - with_toc_data
+    - strikethrough
+    - smart
+
+# Syntax Highlighting
+highlighter: pygments
+
+# Approved github jekyll plugins
+gems:
+  - jekyll-sitemap
+  - jemoji
+
+# Ignore files meant for building
+exclude:
+  - .bowerrc
+  - .bundle
+  - .ruby-version
+  - bower.json
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package.json
+
+# Analytics
+analytics:
+  google: UA-27838577-3
+
+sharing:
+  twitter: rolnaaba
+  disqus: newchad
+
+# Social links
+social:
+  github: englercj
+  # facebook: chad.engler.5
+  twitter: rolnaaba
+  linkedin: chad-engler
+  rss: /rss.xml

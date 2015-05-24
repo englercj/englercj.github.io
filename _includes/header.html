@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {% if page.desc %}
+            <meta content="{{ page.desc }}" name="description" />
+        {% else %}
+            <meta content="{{ site.desc }}" name="description" />
+        {% endif %}
+
+        <meta content="{{ site.name }}" property="og:site_name" />
+        {% if page.title %}<meta content="{{ page.title }}" property="og:title" />{% else %}<meta content="{{ site.name }}" property="og:title" />{% endif %}
+        {% if page.title %}<meta content="article" property="og:type" />{% else %}<meta content="website" property="og:type" />{% endif %}
+        {% if page.desc %}<meta content="{{ page.desc }}" property="og:description" />{% else %}<meta content="{{ site.desc }}" property="og:description" />{% endif %}
+        {% if page.url %}<meta content="{{ site.url }}{{ page.url }}" property="og:url" />{% endif %}
+        {% if page.date %}<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time" />{% endif %}
+        <meta content="{{ site.url }}/pages/about/" property="article:author" />
+        {% if page.image_file %}<meta content="{{ page.image_file }}" property="og:image" />{% else %}<meta content="{{ site.url }}/img/background.jpg" property="og:image" />{% endif %}
+        {% if page.tags %}
+            {% for tag in page.tags %}
+                <meta content="{{ tag }}" property="article:tag" />
+            {% endfor %}
+        {% endif %}
+
+        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="{{site.url}}/css/base.css">
+
+        <script>var disqus_shortname = '{{site.sharing.disqus}}';</script>
+    </head>
+    <body>
+       <header>
+            <!--<div id="logo">
+                <img src="{{site.url}}/img/logo.jpg" alt="">
+            </div>-->
+            <div id="site-heading">
+                <h2 class="title">{{site.name}}</h2>
+                <h3 class="subtitle">{{site.description}}</h3>
+            </div>
+            <ul id="nav">
+                 <li class="{% if page.url == '/pages/about/' %}active{% endif %}"><a href="{{site.url}}/pages/about">About</a></li>
+                 <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{site.url}}/index.html">Blog</a></li>
+                 <li><a href="#" id="contact-section">Contact</a></li>
+            </ul>
+            <div id="contact-wrapper">
+                <div id="contact-content">
+                    <i class="fa fa-envelope-o contact-icon"></i>
+                    <ul id="contact-list">
+                        <li><a href="mailto:{{site.author.email}}">{{site.author.email}}</a></li>
+                        <li class="separator">/</li>
+                        <li><a target="_blank" href="https://twitter.com/{{site.social.twitter}}">@{{site.social.twitter}}</a></li>
+                    </ul>
+                </div>
+                <a href="#" id="contact-close"><i class="fa fa-times"></i></a>
+            </div>
+       </header>
+       <div id="main-contents">

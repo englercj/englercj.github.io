@@ -1,0 +1,44 @@
+ </div>
+       <footer>
+            <div id="footer-quote">
+                <div class="container">
+                    <div class="contents">
+                        <div class="quote-icon">
+                            <i class="fa fa-quote-right"></i>
+                        </div>
+                        <span class="quote-name">Walt Disney</span>
+                        <div class="quote-text">
+                            You can design and create, and build the most wonderful place in the world. But it takes <span class="colored-text">people</span> to make the dream a reality.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+                <div class="container">
+                    <ul id="social-icons">
+                        {% if site.social.github %}<li><a target="_blank" href="https://github.com/{{site.social.github}}"><i class="fa fa-github"></i></a></li>{% endif %}
+                        {% if site.social.facebook %}<li><a target="_blank" href="https://www.facebook.com/{{site.social.facebook}}"><i class="fa fa-facebook"></i></a></li>{% endif %}
+                        {% if site.social.twitter %}<li><a target="_blank" href="https://twitter.com/{{site.social.twitter}}"><i class="fa fa-twitter"></i></a></li>{% endif %}
+                        {% if site.social.gplus %}<li><a target="_blank" href="https://plus.google.com/{{site.social.gplus}}"><i class="fa fa-google-plus"></i></a></li>{% endif %}
+                        {% if site.social.linkedin %}<li><a target="_blank" href="https://www.linkedin.com/pub/chad-engler/65/71b/b39"><i class="fa fa-linkedin"></i></a></li>{% endif %}
+                        {% if site.social.pintrest %}<li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>{% endif %}
+                        {% if site.social.rss %}<li><a href="{{site.url}}{{site.social.rss}}"><i class="fa fa-rss"></i></a></li>{% endif %}
+                    </ul>
+                    <div id="copyright">© COPYRIGHT 2015 Chad Engler. ALL RIGHTS RESERVED</div>
+                    <a id="home-circle" href="{{site.url}}"><i class="fa fa-home"></i></a>
+                </div>
+            </div>
+       </footer>
+       <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', '{{ site.analytics.google }}', 'auto');
+          ga('send', 'pageview');
+       </script>
+       <script type="text/javascript" src="{{site.url}}/js/jquery-1.11.0.min.js"></script>
+       <script type="text/javascript" src="{{site.url}}/js/custom.js"></script>
+    </body>
+</html>

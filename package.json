@@ -1,0 +1,18 @@
+{
+  "name": "englercj.github.io",
+  "version": "1.0.0",
+  "description": "My personal blog about codes",
+  "scripts": {
+    "post": "touch `date +\"%Y-%m-%d\"`-TITLE.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/englercj/englercj.github.io.git"
+  },
+  "author": "Chad Engler <chad@pantherdev.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/englercj/englercj.github.io/issues"
+  },
+  "homepage": "https://github.com/englercj/englercj.github.io"
+}
