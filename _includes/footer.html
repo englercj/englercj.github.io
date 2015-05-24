@@ -6,15 +6,13 @@
                         <div class="quote-icon">
                             <i class="fa fa-quote-right"></i>
                         </div>
-                        <span class="quote-name">Walt Disney</span>
-                        <div class="quote-text">
-                            You can design and create, and build the most wonderful place in the world. But it takes <span class="colored-text">people</span> to make the dream a reality.
-                        </div>
+                        <span class="quote-name">{{site.quote.name}}</span>
+                        <div class="quote-text">{{site.quote.content}}</div>
                     </div>
                 </div>
             </div>
             <div id="bottom">
-                <div class="container">
+                <div>
                     <ul id="social-icons">
                         {% if site.social.github %}<li><a target="_blank" href="https://github.com/{{site.social.github}}"><i class="fa fa-github"></i></a></li>{% endif %}
                         {% if site.social.facebook %}<li><a target="_blank" href="https://www.facebook.com/{{site.social.facebook}}"><i class="fa fa-facebook"></i></a></li>{% endif %}

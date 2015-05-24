@@ -30,22 +30,22 @@ layout: default
             </div>
             <div class="post-body">
                 <div class="meta">
-                    <a href="{{site.url}}{{ post.url }}" class="date">{{ post.date | date_to_long_string }}</a>
+                    <a href="{{site.baseurl}}{{ post.url }}" class="date">{{ post.date | date_to_long_string }}</a>
                 </div>
-                <a href="{{site.url}}{{ post.url }}">
+                <a href="{{site.baseurl}}{{ post.url }}">
                     <h2 class="title">{{ post.title }}</h2>
                 </a>
                 <div class="content">
-                    {{ post.excerpt }}
-                </div> 
+                    {{ post.excerpt | markdownify }}
+                </div>
             </div>
-            <a href="{{site.url}}{{ post.url }}" class="post-more">Read more</a>
+            <a href="{{site.baseurl}}{{ post.url }}" class="post-more">Read more</a>
 
             <ul class="post-socials">
                 <li><a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{post.url}}&t={{post.title}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/intent/tweet?original_referer={{site.url}}{{page.url}}&text={{post.title}}&url={{site.url}}{{post.url}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://twitter.com/intent/tweet?original_referer={{site.url}}{{page.url}}&text={{post.title}}&url={{site.url}}{{post.url}}&amp;via={{ site.sharing.twitter | uri_escape }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://plus.google.com/share?url={{site.url}}{{post.url}}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-            </ul>                  
+            </ul>
         </div>
         {% endfor %}
     </div>
@@ -53,13 +53,13 @@ layout: default
     <div id="blog-pagination">
         <ul>
             {% if paginator.previous_page %} 
-            <li class="prev"><a href="{{site.url}}{{paginator.previous_page_path}}"><i class="fa fa-angle-left"></i><span>Prev</span></a></li>
+            <li class="prev"><a href="{{site.baseurl}}{{paginator.previous_page_path}}"><i class="fa fa-angle-left"></i><span>Prev</span></a></li>
             {% endif %}
             {% if paginator.previous_page or paginator.next_page%} 
             <li class="separator"></li>
             {% endif %}
              {% if paginator.next_page %}
-            <li class="next"><a href="{{site.url}}{{paginator.next_page_path}}"><span>Next</span><i class="fa fa-angle-right"></i></a></li>
+            <li class="next"><a href="{{site.baseurl}}{{paginator.next_page_path}}"><span>Next</span><i class="fa fa-angle-right"></i></a></li>
             {% endif %}
         </ul>
     </div>

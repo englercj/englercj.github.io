@@ -13,13 +13,13 @@ azee - Minimal Blog theme for Jekyll  main JS file
 
     var $contactwrapper=$('#contact-wrapper');
 
-    $('#contact-section').on('click',function(e){
+    $('#contact-section').on('click', function (e) {
         e.preventDefault();
-        $contactwrapper.animate({top:0},300);
+        $contactwrapper.animate({ top:0 }, 300);
     });
-    $('#contact-close').on('click',function(e){
+    $('#contact-close').on('click', function (e) {
         e.preventDefault();
-        $contactwrapper.animate({top:'100%'},300);
+        $contactwrapper.animate({ top:'100%' }, 300);
     });
 
  })(jQuery);

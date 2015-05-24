@@ -3,6 +3,12 @@ layout: post_simple
 title:  Node.js Binary HTTP Streams
 date:   2012-06-27 5:59:00
 
+
+excerpt: >
+    Recently I implemented a app in Node.js that served statistics data to remote relays. I decided to roll with HTTP to keep it simple.
+    Using [expressjs](http://expressjs.com/) I quickly threw up my server, and found that express
+    allows you to pass a buffer as the response. Here is something like what I did:
+
 tags:
 - programming
 - node.js
