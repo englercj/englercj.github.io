@@ -8,7 +8,7 @@ author:
 # Page setup
 permalink: pretty
 baseurl: /
-url: //localhost:4000
+url: //englercj.github.io
 encoding: UTF-8
 
 paginate: 5
