@@ -20,7 +20,7 @@ layout: default
             <div class="post-tags">
                 <i class="fa fa-tags"></i>
                 {% for tag in page.tags %}
-                <a class="tag_list_link" href="{{site.url}}/tags/#tag-{{ tag }}">{{ tag }}</a>
+                <a class="tag_list_link" href="{{site.baseurl}}/tags/#tag-{{ tag }}">{{ tag }}</a>
                 <span class="seperator">,</span>
                 {% endfor %}
             </div>

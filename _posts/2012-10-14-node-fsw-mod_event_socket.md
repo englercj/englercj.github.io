@@ -9,9 +9,7 @@ excerpt: >
     [FreeSWITCH Wiki](http://wiki.freeswitch.org/wiki/Main_Page) I found a module in FreeSWITCH called `mod_event_socket`.
 
 tags:
-- programming
 - node.js
-- javascript
 ---
 
 Recently I had been tasked with learning more about Telephony and [FreeSWITCH](http://freeswitch.org/);

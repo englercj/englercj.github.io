@@ -9,9 +9,7 @@ excerpt: >
     allows you to pass a buffer as the response. Here is something like what I did:
 
 tags:
-- programming
 - node.js
-- javascript
 ---
 
 <div class="alert alert-info" role="alert">

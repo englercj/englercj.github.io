@@ -12,9 +12,9 @@ title: Tags
         {% assign tags = tagString | split: '|' | sort: 'downcase' %}
         <div id="cloud">
             {% for tag in tags %}
-                {% assign number = site.tags[tag].size %}
+                {% assign size = site.tags[tag].size | times: 100 | divided_by: site.tags.size | plus: 70 %}
                 {% assign slug = tag | downcase | replace: ' ', '_' %}
-                <span class="{% if number == 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% else %}huge{% endif %}">
+                <span style="font-size: {{ size }}%">
                     <a href="#tag-{{ slug }}">{{ tag | downcase }}</a>
                 </span>
             {% endfor %}
