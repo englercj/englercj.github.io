@@ -3,6 +3,11 @@ layout: post_simple
 title:  Node.js, FreeSWITCH, and mod_event_socket
 date:   2012-10-17 17:17:00
 
+excerpt: >
+    Recently I had been tasked with learning more about Telephony and [FreeSWITCH](http://freeswitch.org/);
+    specifically how to send/receive text messages. After reading around on the
+    [FreeSWITCH Wiki](http://wiki.freeswitch.org/wiki/Main_Page) I found a module in FreeSWITCH called `mod_event_socket`.
+
 tags:
 - programming
 - node.js
