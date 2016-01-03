@@ -29,6 +29,8 @@ container it would add lighting to that container. Problem was that since it was
 shaded for each object in the container. In the few projects I wanted to use the effect in, it wasn't performant enough
 for the amount of lights I wanted to have. So I started looking for a better way.
 
+<!--more-->
+
 ## Deferred Rendering
 
 Eventually I found the concept of deferred rendering. We will talk more about how it works, but the goal of deferred

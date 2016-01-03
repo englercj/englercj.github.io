@@ -10,6 +10,7 @@ permalink: pretty
 baseurl:
 url: //englercj.github.io
 encoding: UTF-8
+excerpt_separator: <!--more-->
 
 paginate: 5
 paginate_path: "page:num"
