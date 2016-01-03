@@ -119,7 +119,7 @@ Pretty standard.
 
 Next up we need to create the framebuffers that the passes will draw to. The final composite phase will draw to the
 screen so it doesn't need one. But the diffuse and normal passes do. It just so happens that pixi provides an abstraction
-for easily using framebuffers called [`PIXI.RenderTexture`][docs.RenderTexture]. But when do we create these buffers? Well,
+for easily using framebuffers called [`PIXI.RenderTexture`][docs-RenderTexture]. But when do we create these buffers? Well,
 the WebGLRenderer has a method for initializing objects when the context is ready. It is called on construction, but also
 when the context is restored (if there is a context loss). Lets extend that with our own initialization:
 
@@ -358,4 +358,4 @@ this far that you also learned something!
 
 [code]: https://github.com/pixijs/pixi-lights
 [wglstats]: http://webglstats.com/
-[docs.RenderTetxure]: http://pixijs.github.io/docs/PIXI.RenderTexture.html
+[docs-RenderTetxure]: http://pixijs.github.io/docs/PIXI.RenderTexture.html
