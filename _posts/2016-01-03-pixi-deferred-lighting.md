@@ -358,4 +358,4 @@ this far that you also learned something!
 
 [code]: https://github.com/pixijs/pixi-lights
 [wglstats]: http://webglstats.com/
-[docs.renderTetxure]: http://pixijs.github.io/docs/PIXI.RenderTexture.html
+[docs.RenderTetxure]: http://pixijs.github.io/docs/PIXI.RenderTexture.html
