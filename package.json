@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My personal blog about codes",
   "scripts": {
-    "post": "touch `date +\"%Y-%m-%d\"`-TITLE.md"
+    "start": "jekyll serve --watch"
   },
   "repository": {
     "type": "git",

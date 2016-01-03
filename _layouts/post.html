@@ -35,7 +35,7 @@ layout: default
     </div>
     <div id="blog-pagination">
         <ul>
-        	{% if page.previous.url %} 
+            {% if page.previous.url %} 
             <li class="prev"><a href="{{site.url}}{{page.previous.url}}"><i class="fa fa-angle-left"></i><span>Prev</span></a></li>
             {% endif %}
             {% if page.previous.url or page.next.url%} 
