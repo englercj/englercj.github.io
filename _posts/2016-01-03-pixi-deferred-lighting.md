@@ -1,5 +1,5 @@
 ---
-layout: post_image
+layout: post_canvas
 title:  Deferred Lighting with Pixi.js
 date:   2016-01-03 12:00:00
 
@@ -359,3 +359,81 @@ this far that you also learned something!
 [code]: https://github.com/pixijs/pixi-lights
 [wglstats]: http://webglstats.com/
 [docs-RenderTexture]: http://pixijs.github.io/docs/PIXI.RenderTexture.html
+
+<!-- Control code for the top post canvas -->
+
+<script src="//cdn.rawgit.com/pixijs/pixi.js/962f5bdff1ed2d96cfeaef22897ed83b7cce79bd/bin/pixi.min.js"></script>
+<script src="//cdn.rawgit.com/pixijs/pixi-lights/b7fd7924fdf4e6a6b913ff29161402e7b36f0c0f/bin/pixi-lights.js"></script>
+
+<pre>
+<script>
+    (function () {
+        var view = document.getElementById('post-canvas');
+        var renderer = new PIXI.lights.WebGLDeferredRenderer(view.width, view.height, { view: view });
+        var stage = new PIXI.Container();
+        var light = new PIXI.lights.PointLight(0xffffff, 1);
+
+        PIXI.loader.baseUrl = 'https://cdn.rawgit.com/pixijs/pixi-lights/b7fd7924fdf4e6a6b913ff29161402e7b36f0c0f/';
+
+        PIXI.loader
+            .add('bg_diffuse', 'test/BGTextureTest.jpg')
+            .add('bg_normal', 'test/BGTextureNORM.jpg')
+            .add('block_diffuse', 'test/block.png')
+            .add('block_normal', 'test/blockNormalMap.png')
+            .load(onAssetsLoaded);
+
+        function onAssetsLoaded(loader, res) {
+            var bg = new PIXI.Sprite(res.bg_diffuse.texture);
+            var block = new PIXI.Sprite(res.block_diffuse.texture);
+            var block1 = new PIXI.Sprite(res.block_diffuse.texture);
+            var block2 = new PIXI.Sprite(res.block_diffuse.texture);
+
+            bg.normalTexture = res.bg_normal.texture;
+            block.normalTexture = res.block_normal.texture;
+            block1.normalTexture = res.block_normal.texture;
+            block2.normalTexture = res.block_normal.texture;
+
+            block.position.set(100, 100);
+            block1.position.set(500, 100);
+            block2.position.set(300, 400);
+
+            light.position.set(525, 160);
+            stage.addChild(bg);
+            stage.addChild(block);
+            stage.addChild(block1);
+            stage.addChild(block2);
+
+            stage.addChild(new PIXI.lights.AmbientLight(null, 0.4));
+            stage.addChild(new PIXI.lights.DirectionalLight(null, 1, block1));
+            stage.addChild(light);
+
+            renderer.view.addEventListener('mousemove', function (e) {
+                var rect = e.target.getBoundingClientRect();
+                light.position.x = e.clientX - rect.left;
+                light.position.y = e.clientY - rect.top;
+            });
+
+            renderer.view.addEventListener('click', function (e) {
+                var rect = e.target.getBoundingClientRect();
+                var clickLight = new PIXI.lights.PointLight(0xffffff);
+                clickLight.position.x = e.clientX - rect.left;
+                clickLight.position.y = e.clientY - rect.top;
+                stage.addChild(clickLight);
+            });
+
+            animate();
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(stage);
+        }
+
+        function resize() {
+            renderer.resize(view.width, view.height);
+        }
+
+        window.addEventListener('resize', resize);
+    })();
+</script>
+</pre>

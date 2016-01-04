@@ -14,7 +14,7 @@ layout: default
                     {% when 'post_simple' %}
                       {% include simple_post_header.html %}
 
-                    {% when 'post_image' %}
+                    {% when 'post_image' or 'post_canvas' %}
                       {% include image_post_header.html %}
 
                     {% when 'post_video' %}
@@ -56,13 +56,13 @@ layout: default
         </div>
         {% endfor %}
     </div>
-        
+
     <div id="blog-pagination">
         <ul>
-            {% if paginator.previous_page %} 
+            {% if paginator.previous_page %}
             <li class="prev"><a href="{{site.baseurl}}{{paginator.previous_page_path}}"><i class="fa fa-angle-left"></i><span>Prev</span></a></li>
             {% endif %}
-            {% if paginator.previous_page or paginator.next_page%} 
+            {% if paginator.previous_page or paginator.next_page%}
             <li class="separator"></li>
             {% endif %}
              {% if paginator.next_page %}

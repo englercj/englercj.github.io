@@ -1,0 +1,22 @@
+---
+layout: post
+---
+
+<canvas id="post-canvas" />
+<pre>
+<script>
+    (function () {
+        var canvas = document.getElementById('post-canvas');
+        var $parent = $(canvas).parent();
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        function resize() {
+            var w = $parent.width();
+            canvas.width = w;
+            canvas.height = w / 2;
+        }
+    })();
+</script>
+</pre>
