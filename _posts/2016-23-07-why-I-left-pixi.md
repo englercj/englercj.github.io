@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_simple
 title:  Why I'm leaving Pixi.js
 date:   2016-07-23 12:00:00
 
@@ -25,6 +25,8 @@ every morning by browsing the issue list and forums, commenting and answering ev
 question I can and even fixing bugs when I had the time in between my day job.
 
 Every. Single. Day. Until today.
+
+<!--more-->
 
 ## Things changed
 
