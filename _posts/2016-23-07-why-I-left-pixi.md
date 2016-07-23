@@ -49,6 +49,8 @@ At first, the toxicity didn't get to me. I put on a nice face, worked through it
 and kept building an amazing library. Soon though it started getting targeted directly
 at me, here are a few anonymized comments:
 
+---
+
 > I actually have lazy updateTransform in (redacted), but I think that it will be
 > refactored and merged only next year.
 > I'm having problems merging even easiest things there - @englercj keeps finding
@@ -56,10 +58,16 @@ at me, here are a few anonymized comments:
 > ...
 > You can close this one, there is no hope
 
+---
+
 > I want to move binaries in other repository anyway, and fighting with @GoodBoyDigital
 > and @englercj about it.
 
+---
+
 > Are you sure you know how JavaScript even works?
+
+---
 
 Seems like every time I question anything, or challenge assumptions I'm accused of
 holding up progress. I'm constantly blamed as the reason bugs aren't fixed, and why
