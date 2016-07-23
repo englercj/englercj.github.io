@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Why I'm leaving Pixi.js
-date:   2016-23-07 12:00:00
+date:   2016-07-23 12:00:00
 
 tags:
 - pixi.js
