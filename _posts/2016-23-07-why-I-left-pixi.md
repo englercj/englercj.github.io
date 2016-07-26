@@ -88,7 +88,7 @@ I want to thank everyone who worked with me on the project, especially Matt Grov
 and I wish the best for the future of Pixi.js.
 
 If anyone is interested I'll be experimenting with a new renderer I've code named
-"Fay": https://github.com/englercj/fay. It is a pure ES6, WebGL-focused renderer.
+"Fae": https://github.com/englercj/fae. It is a pure ES6, WebGL-focused renderer.
 I also have some other projects I'd be willing to talk about as they get further
 along.
 
