@@ -147,7 +147,7 @@ class FilteredSprite extends Sprite.with(FilterComponent) {
 I can use the built-in sprite but extend it with a FilterComponent to get the feature-rich sprite
 I want. As a real-world example, here is the sprite class in [Fae][fae]:
 
-```
+```js
 import { ecs } from '@fae/core';
 import { TransformComponent } from '@fae/transform';
 import { TextureComponent } from '@fae/textures';
