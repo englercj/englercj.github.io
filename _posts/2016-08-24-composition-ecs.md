@@ -17,6 +17,8 @@ Recently I've been working on building [Fae][fae], a modular 2D renderer. My mai
 building the project was exploring the question "If I was building Pixi.js, from scratch, today; what
 would I do?"
 
+<!--more-->
+
 I thought about this for quite some time, and read as much as I could from users and library authors
 talking about what they liked and disliked. One particular thing that stood out to me, is that over
 the years pixi has gotten pretty big. It has a lot of features, and is very powerful; but most
