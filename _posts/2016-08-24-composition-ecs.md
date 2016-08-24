@@ -9,7 +9,8 @@ tags:
 - javascript
 ---
 
-TL;DR: I made an [ecs library][fae-ecs] that focuses on assemblages (composed entities).
+TL;DR: I made an [ecs library][fae-ecs] that focuses on assemblages (composed entities), and treats
+components as JS Mixins.
 
 ## Why build Fae?
 
