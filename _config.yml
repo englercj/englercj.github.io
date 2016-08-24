@@ -19,16 +19,7 @@ quote:
   content: We can’t solve problems by using the same kind of thinking we used when we created them.
 
 # Markdown settings
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - no_intra_emphasis
-    - fenced_code_blocks
-    - autolink
-    - tables
-    - with_toc_data
-    - strikethrough
-    - smart
+markdown: kramdown
 
 # Syntax Highlighting
 highlighter: rouge
