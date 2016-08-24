@@ -8,6 +8,7 @@ image_file: blog/pixi-lights.jpg
 tags:
 - pixi.js
 - javascript
+- programming
 - rendering
 ---
 

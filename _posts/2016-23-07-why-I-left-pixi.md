@@ -5,8 +5,7 @@ date:   2016-07-23 12:00:00
 
 tags:
 - pixi.js
-- programming
-- fay
+- fae
 ---
 
 ## 3 Years Running
