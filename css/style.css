@@ -647,11 +647,11 @@ blockquote{
 .colored-text{
 	color:#d16b19;
 }
-
+/*
 .highlight{
 	background: #d16b19;
 	color: #f3f3f3;
-}
+} */
 
 @media screen and (max-width: 768px) {
 
