@@ -1,6 +1,6 @@
 /* azee - Minimal Blog theme for Jekyll v1.0
 @2014 owwwlab
-http://themeforest.net/user/owwwlab/portfolio 
+http://themeforest.net/user/owwwlab/portfolio
 **************************************************/
 
 body{
@@ -49,7 +49,7 @@ h4{
 }
 
 
-/*Header 
+/*Header
  **************************************************/
 header{
 	border-top:5px solid #d16b19;
@@ -101,7 +101,7 @@ header{
 	text-transform: uppercase;
 	font-family: 'Open Sans Condensed';
 	padding: 5px;
-	margin-right:12px; 
+	margin-right:12px;
 
 	-webkit-transition: all .25s ease;
 	   -moz-transition: all .25s ease;
@@ -212,12 +212,12 @@ header{
 #contact-wrapper a:hover{
 	color:#ccc;
 }
-/*Main content 
+/*Main content
  **************************************************/
-					
+
 #main-contents{
 	background-color: #eaebec;
-	padding-top:100px; 
+	padding-top:100px;
 }
 .page-contents{
 	padding: 100px;
@@ -243,7 +243,7 @@ header{
 	max-width: 100%;
 }
 
-/*blog 
+/*blog
  **************************************************/
 .post-item{
 	padding: 100px;
@@ -254,6 +254,9 @@ header{
 }
 
 .post-item .post-header img{
+	width: 100%;
+}
+.post-item .post-header iframe{
 	width: 100%;
 }
 .post-item .post-header .video-wrapper {
@@ -479,7 +482,7 @@ header{
 #ptitle-list li>*{
 	display: inline-block;
 }
-/*Footer 
+/*Footer
  **************************************************/
 
  #footer-quote{
@@ -624,7 +627,7 @@ margin-bottom: 10px;
 	position: relative;
 	z-index: 1;
 }
-/* Shortcodes 
+/* Shortcodes
  **************************************************/
 blockquote{
 	color:#4d4d4d;
